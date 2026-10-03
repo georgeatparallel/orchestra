@@ -118,8 +118,9 @@ The connection explicitly uses `https://search.parallel.ai/mcp` with
 `--transport http-only` and sends `User-Agent: mainframe-orchestra/<version>` on
 HTTP requests. Tools are scoped to this example's `parallel_search` connection;
 existing WebTools choices and application configuration remain unchanged.
-The async context manager closes the bridge connection after the search or task,
-and connection or tool errors propagate to the caller.
+The async context manager closes the bridge connection after the search or task.
+Connection errors and direct search errors propagate to the caller. Agent tool
+errors use Orchestra's existing Task handling.
 
 If your network requires a proxy or custom certificate, the example forwards
 `HTTP_PROXY`, `HTTPS_PROXY`, `NO_PROXY` (and their lowercase equivalents) and
