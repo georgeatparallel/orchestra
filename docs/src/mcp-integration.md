@@ -88,7 +88,7 @@ connects through Orchestra's existing stdio adapter using
 server's Streamable HTTP endpoint. It discovers `web_search` and `web_fetch` and
 passes the tools to an Orchestra agent when requested.
 
-Install Python 3.10+ and Node.js 18+ with `npx` on your PATH. From the repository
+Install Python 3.10+ and Node.js 22+ with `npx` on your PATH. From the repository
 root, install Orchestra and run a search:
 
 ```bash
